@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<title>Edit Menu Item</title>
+<link rel="stylesheet" href="style/style.css">
+<script type="text/javascript" src="js/validation.js"></script>
+<style>
+.body-main th{
+	text-align: left;
+}
+.body-main td{
+	text-align: left;
+}
+.button {
+  background-color: #004080;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+<header class="header container-fluid">
+<h1 class="header-itemleft">truYum<h1>
+<img src="image/image1.jfif">
+<a class="header-itemright" href="menu-item-list-admin.html">Menu</a>
+</header>
+<section class="body-main">
+<h1 class="header-itemleft">Edit Menu Item<h1><br><br>
+<form name="editMenuForm" action="edit-menu-item-status.html" method="post" onsubmit="return validateMenuItemForm()">
+<table style="width: 100%">
+<tr><th colspan="4"><label for="mname">Name:</label></th></tr>
+<tr><td colspan="4"><input type="text" id="mname"name="itemName" style="width: 75%"></td></tr>
+<tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+<tr><th><label for="mprice">Price:</label></th>
+<th><label for="mavailability">Availability:</label></th>
+<th><label for="mdate">Date of Launch:</label></th>
+<th><label for="mcategory">Category:</label></th></tr>
+<tr>
+<td><input type="text" name="price" id="mprice"></td>
+<td><input type="radio" id="mavailability" name="availability" value="Yes" style="font-size: 20px">Yes  
+    <input type="radio" id="mavailability" name="availability" value="No" style="font-size: 20px">No</td>
+<td><input type="date" name="date" id="mdate"></td>
+<td><input list="categories" name="itemType" id="mcategory">
+    <datalist id="categories">
+    <option value="MainCourse">
+    <option value="Starters">
+    <option value="Dessert">
+    <option value="Drinks">
+</datalist></td></tr>
+<tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+<tr><td><input type="checkbox" name="freedelivery" checked>
+<label>Free Delivery</label></td>
+</tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+<tr><td><a href="edit-menu-item-status.html"><input type="submit" class="button" value="Save"></a></td></tr>
+</table>
+</form>
+</section>
+<footer>Copyright©2019</footer>
+
+</body>
+</html>
